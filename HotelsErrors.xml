@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ERROR 1: The root element name is 'Hotel' instead of 'Hotels' -->
+<Hotel>
+    <Hotel Rating="4.5">
+        <Name>Marriott</Name>
+        <Phone>800-535-4028</Phone>
+        <Phone>480-555-1234</Phone>
+        <Address NearestAirport="Sky Harbor">
+            <Number>123</Number>
+            <Street>Main St</Street>
+            <City>Phoenix</City>
+            <State>AZ</State>
+            <Zip>85004</Zip>
+        </Address>
+    </Hotel>
+
+    <Hotel Rating="4.0">
+        <Name>Hyatt Regency</Name>
+        <Phone>800-233-1234</Phone>
+        <Address NearestAirport="Sky Harbor">
+            <Number>150</Number>
+            <Street>E Van Buren St</Street>
+            <City>Phoenix</City>
+            <State>AZ</State>
+            <Zip>85004</Zip>
+        </Address>
+    </Hotel>
+
+    <!-- ERROR 2: Missing a required attribute (Rating) -->
+    <Hotel>
+        <Name>Westin</Name>
+        <Phone>480-968-8885</Phone>
+        <Phone>800-937-8461</Phone>
+        <Address NearestAirport="Sky Harbor">
+            <Number>11</Number>
+            <Street>E 7th St</Street>
+            <City>Tempe</City>
+            <State>AZ</State>
+            <Zip>85281</Zip>
+        </Address>
+    </Hotel>
+
+    <!-- ERROR 3: Missing a Phone element -->
+    <Hotel Rating="3.8">
+        <Name>Hilton</Name>
+        <Address>
+            <Number>233</Number>
+            <Street>Broadway Ave</Street>
+            <City>New York</City>
+            <State>NY</State>
+            <Zip>10007</Zip>
+        </Address>
+    </Hotel>
+
+    <!-- ERROR 4: No closing tag for Address element -->
+    <Hotel Rating="4.6">
+        <Name>Ritz-Carlton</Name>
+        <Phone>800-241-3333</Phone>
+        <Address NearestAirport="JFK">
+            <Number>50</Number>
+            <Street>Central Park S</Street>
+            <City>New York</City>
+            <State>NY</State>
+            <Zip>10019
+        </Address> <!-- Closing tag is missing here -->
+    </Hotel>
+
+    <!-- ERROR 5: Two names provided for one hotel -->
+    <Hotel Rating="4.4">
+        <Name>Fairmont</Name>
+        <Name>Duplicate Hotel Name</Name> <!-- This is a mistake -->
+        <Phone>800-257-7544</Phone>
+        <Address>
+            <Number>950</Number>
+            <Street>Mason St</Street>
+            <City>San Francisco</City>
+            <State>CA</State>
+            <Zip>94108</Zip>
+        </Address>
+    </Hotel>
+</Hotel>
