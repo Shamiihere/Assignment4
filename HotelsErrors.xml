@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ERROR 1: The root element name is 'Hotel' instead of 'Hotels' -->
-<Hotel>
+<Hotels>
     <Hotel Rating="4.5">
         <Name>Marriott Marquis New York</Name>
         <Phone>212-398-1900</Phone>
