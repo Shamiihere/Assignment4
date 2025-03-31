@@ -3,7 +3,7 @@
     <Hotel Rating="4.4">
         <Name>Marriott Marquis New York</Name>
         <Phone>212-398-1900</Phone>
-        <Phone>212-555-1234</Phone> <!-- Additional Phone -->
+        <Phone>212-555-1234</Phone> 
         <Address NearestAirport="LGA">
             <Number>1535</Number>
             <Street>Broadway</Street>
@@ -16,7 +16,7 @@
     <Hotel Rating="4.2">
         <Name>Hilton San Francisco Union Square</Name>
         <Phone>415-771-1400</Phone>
-        <Phone>415-555-5678</Phone> <!-- Additional Phone -->
+        <Phone>415-555-5678</Phone> 
         <Address NearestAirport="SFO">
             <Number>333</Number>
             <Street>O'Farrell Street</Street>
@@ -41,7 +41,7 @@
     <Hotel Rating="4.7">
         <Name>Ritz-Carlton Los Angeles</Name>
         <Phone>213-743-8800</Phone>
-        <Phone>213-555-9876</Phone> <!-- Additional Phone -->
+        <Phone>213-555-9876</Phone>
         <Address NearestAirport="LAX">
             <Number>900</Number>
             <Street>W Olympic Blvd</Street>
@@ -114,7 +114,7 @@
     <Hotel Rating="4.7">
         <Name>Burj Al Arab</Name>
         <Phone>971-4-301-7777</Phone>
-        <Phone>971-4-301-1234</Phone> <!-- Additional Phone -->
+        <Phone>971-4-301-1234</Phone> 
         <Address NearestAirport="DXB">
             <Number>Jumeirah St</Number>
             <Street>Umm Suqeim</Street>
