@@ -2,80 +2,67 @@
 <!-- ERROR 1: The root element name is 'Hotel' instead of 'Hotels' -->
 <Hotel>
     <Hotel Rating="4.5">
-        <Name>Marriott</Name>
-        <Phone>800-535-4028</Phone>
-        <Phone>480-555-1234</Phone>
-        <Address NearestAirport="Sky Harbor">
-            <Number>123</Number>
-            <Street>Main St</Street>
-            <City>Phoenix</City>
-            <State>AZ</State>
-            <Zip>85004</Zip>
-        </Address>
-    </Hotel>
-
-    <Hotel Rating="4.0">
-        <Name>Hyatt Regency</Name>
-        <Phone>800-233-1234</Phone>
-        <Address NearestAirport="Sky Harbor">
-            <Number>150</Number>
-            <Street>E Van Buren St</Street>
-            <City>Phoenix</City>
-            <State>AZ</State>
-            <Zip>85004</Zip>
-        </Address>
-    </Hotel>
-
-    <!-- ERROR 2: Missing a required attribute (Rating) -->
-    <Hotel>
-        <Name>Westin</Name>
-        <Phone>480-968-8885</Phone>
-        <Phone>800-937-8461</Phone>
-        <Address NearestAirport="Sky Harbor">
-            <Number>11</Number>
-            <Street>E 7th St</Street>
-            <City>Tempe</City>
-            <State>AZ</State>
-            <Zip>85281</Zip>
-        </Address>
-    </Hotel>
-
-    <!-- ERROR 3: Missing a Phone element -->
-    <Hotel Rating="3.8">
-        <Name>Hilton</Name>
-        <Address>
-            <Number>233</Number>
-            <Street>Broadway Ave</Street>
-            <City>New York</City>
-            <State>NY</State>
-            <Zip>10007</Zip>
-        </Address>
-    </Hotel>
-
-    <!-- ERROR 4: No closing tag for Address element -->
-    <Hotel Rating="4.6">
-        <Name>Ritz-Carlton</Name>
-        <Phone>800-241-3333</Phone>
+        <Name>Marriott Marquis New York</Name>
+        <Phone>212-398-1900</Phone>
+        <Phone>212-555-1234</Phone>
         <Address NearestAirport="JFK">
-            <Number>50</Number>
-            <Street>Central Park S</Street>
+            <Number>1535</Number>
+            <Street>Broadway</Street>
             <City>New York</City>
             <State>NY</State>
-            <Zip>10019
-        </Address> <!-- Closing tag is missing here -->
+            <Zip>10036</Zip>
+        </Address>
     </Hotel>
 
-    <!-- ERROR 5: Two names provided for one hotel -->
-    <Hotel Rating="4.4">
-        <Name>Fairmont</Name>
-        <Name>Duplicate Hotel Name</Name> <!-- This is a mistake -->
-        <Phone>800-257-7544</Phone>
-        <Address>
-            <Number>950</Number>
-            <Street>Mason St</Street>
-            <City>San Francisco</City>
+    <Hotel>
+        <!-- ERROR 2: Missing Required Attribute (No Rating Attribute) -->
+        <Name>Hyatt Regency Chicago</Name>
+        <Phone>312-565-1234</Phone>
+        <Address NearestAirport="ORD">
+            <Number>151</Number>
+            <Street>E Wacker Dr</Street>
+            <City>Chicago</City>
+            <State>IL</State>
+            <Zip>60601</Zip>
+        </Address>
+    </Hotel>
+
+    <Hotel Rating="4.7">
+        <!-- ERROR 3: Missing Phone Element -->
+        <Name>Ritz-Carlton Los Angeles</Name>
+        <Address NearestAirport="LAX">
+            <Number>900</Number>
+            <Street>W Olympic Blvd</Street>
+            <City>Los Angeles</City>
             <State>CA</State>
-            <Zip>94108</Zip>
+            <Zip>90015</Zip>
+        </Address>
+    </Hotel>
+
+    <Hotel Rating="4.6">
+        <Name>Four Seasons Hotel Miami</Name>
+        <Phone>305-358-3535</Phone>
+        <!-- ERROR 4: No Closing Tag for Address -->
+        <Address NearestAirport="MIA">
+            <Number>1435</Number>
+            <Street>Brickell Ave</Street>
+            <City>Miami</City>
+            <State>FL</State>
+            <Zip>33131
+        </Address> <!-- Missing Closing Tag Here -->
+    </Hotel>
+
+    <Hotel Rating="4.4">
+        <!-- ERROR 5: Duplicate Name Elements -->
+        <Name>Fairmont Chicago</Name>
+        <Name>Duplicate Name</Name> <!-- This should cause an error -->
+        <Phone>312-565-8000</Phone>
+        <Address NearestAirport="ORD">
+            <Number>200</Number>
+            <Street>N Columbus Dr</Street>
+            <City>Chicago</City>
+            <State>IL</State>
+            <Zip>60601</Zip>
         </Address>
     </Hotel>
 </Hotel>
